@@ -18,8 +18,8 @@ ${SOURCES}
     ${HEADERS}
 )
 
-target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_20)
-target_precompile_headers(${PROJECT_NAME} PUBLIC src/pch.pch)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
+target_precompile_headers(${PROJECT_NAME} PRIVATE src/pch.pch)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/ph/${PROJECT_NAME}>
