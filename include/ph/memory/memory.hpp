@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 //#include <ranges>
 #include <concepts>
@@ -57,21 +58,21 @@ consteval int* aa ()
 {
     return new int;
 }
-int main (){
-    constexpr auto aaa = test3();
-    cout << "hi" << endl;
-    cout << 3 << endl;
+// int main (){
+//     constexpr auto aaa = test3();
+//     cout << "hi" << endl;
+//     cout << 3 << endl;
 
-    // constexpr foo f (new int);
-    // constexpr auto a = aa();
-    //  auto a = std::allocator<int>::allocate(1); // obtain storage for an int
+//     // constexpr foo f (new int);
+//     // constexpr auto a = aa();
+//     //  auto a = std::allocator<int>::allocate(1); // obtain storage for an int
 
-//     constexpr auto a = new int;
-//   std::construct_at(a);                      // begin lifetime of an int
-//   *a = 1;
-//   *a = *a + 2;
-//   int r = *a;
-//   std::destroy_at(a);                        // end lifetime
-//   std::allocator<int>::deallocate(a, 1);     // release storage
-    return 0;
-}
+// //     constexpr auto a = new int;
+// //   std::construct_at(a);                      // begin lifetime of an int
+// //   *a = 1;
+// //   *a = *a + 2;
+// //   int r = *a;
+// //   std::destroy_at(a);                        // end lifetime
+// //   std::allocator<int>::deallocate(a, 1);     // release storage
+//     return 0;
+// }
