@@ -23,10 +23,10 @@ target_precompile_headers(${PROJECT_NAME} PUBLIC src/pch.pch)
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
 
-# target_include_directories(${PROJECT_NAME} PRIVATE
-#     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/ph/${PROJECT_NAME}>
-#     $<INSTALL_INTERFACE:include/ph/${PROJECT_NAME}>
-# )
+target_include_directories(${PROJECT_NAME} PRIVATE
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/ph/${PROJECT_NAME}>
+    $<INSTALL_INTERFACE:include/ph/${PROJECT_NAME}>
+)
 
 # target_include_directories(${PROJECT_NAME} PUBLIC
 #     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
