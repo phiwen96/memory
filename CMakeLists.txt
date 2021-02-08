@@ -13,7 +13,7 @@ set(CMAKE_BUILD_TYPE Release)
 file(GLOB SOURCES src/*.cpp)
 file(GLOB HEADERS include/ph/${PROJECT_NAME}/*.hpp src/pch.pch)
 
-add_library(${PROJECT_NAME} STATIC
+add_library(${PROJECT_NAME} SHARED
     ${HEADERS}
     ${SOURCES}
 )
