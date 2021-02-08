@@ -6,7 +6,7 @@ project(${ProjectId})
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
-set(CMAKE_CXX_COMPILER /usr/local/bin/x86_64-apple-darwin20-g++-10)
+# set(CMAKE_CXX_COMPILER /usr/local/bin/x86_64-apple-darwin20-g++-10)
 set(CMAKE_BUILD_TYPE Release)
 
 
